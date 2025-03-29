@@ -1,0 +1,55 @@
+*{
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.padding {
+  padding: 30px !important;
+  padding-left: 90px !important;
+  padding-right:90px !important;
+}
+
+.custom-font {
+    font-family: "Roboto", sans-serif !important;
+    
+   
+
+  }
+.border{
+    border: 0px none !important;
+    border-radius: 0px !important;
+}
+.margin{
+  margin-left: 20px !important;
+}
+
+
+#home{
+  background: url(./Capture.JPG) !important;
+  background-size: cover !important ;
+  background-position: center !important;
+  height: 100vh !important;
+ 
+}
+
+.font{
+  font-weight: bold;
+}
+
+
+.playfair-display{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+
+  
+}
+
+.image{
+  height: 70px;
+  width: 50px;
+}
+
+.div1{
+  height: 244px !important;
+  width: 349px !important;
+}
