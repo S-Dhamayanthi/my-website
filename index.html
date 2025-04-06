@@ -14,9 +14,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<style>
+.footer {
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  color: white;
+  padding: 50px 0;
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+}
+.social-icons a {
+  display: inline-block;
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.social-icons a:hover {
+  background: white;
+  color: black;
+}
+</style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg custom-font bg-warning-subtle padding">
+
+    <nav class="navbar navbar-expand-lg custom-font bg-warning-subtle padding color">
       <div class="container-fluid">
         <a class="navbar-brand fs-4 fw-bold" href="#">Notary</a>
         <button
@@ -32,19 +61,19 @@
         </button>
       </div>
       <div
-        class="collapse navbar-collapse d-flex justify-content-around"
+        class="collapse navbar-collapse d-flex"
         id="navbarSupportedContent"
       >
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active margin" aria-current="page" href="#"
+            <a class="nav-link active  mx-3" aria-current="page" href="#"
               >Home</a
             >
           </li>
 
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle mx-3"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -53,26 +82,26 @@
               Practice Areas
             </a>
             <ul class="dropdown-menu border">
-              <li><a class="dropdown-item" href="#">Business Law</a></li>
-              <li><a class="dropdown-item" href="#">Civil Law</a></li>
-              <li><a class="dropdown-item" href="#">Family Law</a></li>
-              <li><a class="dropdown-item" href="#">Immigration Law</a></li>
+              <li><a class="dropdown-item my-2" href="#">Business Law</a></li>
+              <li><a class="dropdown-item my-2" href="#">Civil Law</a></li>
+              <li><a class="dropdown-item my-2" href="#">Family Law</a></li>
+              <li><a class="dropdown-item my-2" href="#">Immigration Law</a></li>
 
               <li><a class="dropdown-item" href="#">Criminal Law</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
+            <a class="nav-link active mx-3" aria-current="page" href="#"
               >Testimonals</a
             >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
+            <a class="nav-link active mx-3" aria-current="page" href="#">About</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            <a class="nav-link active mx-3" aria-current="page" href="#">Contact</a>
           </li>
         </ul>
       </div>
@@ -81,33 +110,271 @@
     <!--Home-->
 
 
-    <section id="home" class="d-flex align-items-center">
+    <section id="home" class="d-flex justify-content-center align-items-center ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h1 class="display-4 px-4 text-white">Notary Public & <br> Legal Notations</h1>
+            <p class="mx-2 my-3 text-white" style="font-size: 18px;">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate, quidem! Quia voluptatum delectus dicta labori digniss simili! Corrupti, facilis!
+            </p>
+          </div>
+      
+          <!-- Move "Book an Appointment" to the right -->
+          <div class="col-lg-6 d-flex justify-content-end">
+            <div class="bg-white p-4 rounded shadow-lg" style="width: 400px; height: 400px;">
+              <h4 class="mb-4 my-3 mx-2 play fw-normal">Book an Appointment</h4>
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control mx-2 p-4"  style="height:50px" placeholder="Name" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control mx-2 p-4"   style="height:50px" placeholder="Email" required>
+                </div>
+                <div class="mb-3 ">
+                  <input type="date"   style="height:50px"  class="form-control mx-2 p-4 " required>
+                 
+                   
+                </div>
+                <button type="submit"    style="height:50px" class="btn btn-warning w-100 bg-warning-subtle border border-warning-subtle border-0 color">Book Appointment</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bootstrap Icons -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+        </div>
+      </div>
+      
       
     </section>
 
     <!--Practice-->
-     <section class=" bg-body-secondary py-5 text-center container-fluid custom-font playfair-display">
+     <section class="background py-5 text-center container-fluid custom-font playfair-display">
               <h1 class="fw-light fs-2 fw-semibold">Practice Areas</h1>
-              <p class=" fs-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class=" fs-6 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             
-          
+              <div class="container">
+                <div class="row g-4 px-3"> <!-- gy-4 adds spacing between rows -->
+                    <div class="col-md-4 p-4">
+                        <div class="law-card ">
+                            <img src="./1st.jpg" alt="Bankruptcy">
+                            <h4>Bankruptcy Law</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="law-card ">
+                            <img src="./2nd.jpg" alt="Business">
+                            <h4>Business Law</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="law-card ">
+                            <img src="./3rd.jpg" alt="Civil Rights">
+                            <h4>Civil Rights Law</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="law-card">
+                            <img src="./4th.jpg" alt="Criminal">
+                            <h4>Criminal Law</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="law-card ">
+                            <img src="./5.jpg" alt="Immigration">
+                            <h4>Immigration Law</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="law-card ">
+                            <img src="./6.jpg" alt="Family">
+                            <h4>Family Law</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
       
-      <div class="row">
-        <div class="col-lg-4 border border-2 border-dark mx-3 bg- div1">
-           <img src="./th.jpg "  class="image" alt="">
-        </div>
-        <div class="col-lg-4 bg-light div2">
-
-        </div>
-        <div class="col-lg-4 bg-light div3">
-
-        </div>
-      </div>
-        
-        
+     
 
 
     </section>
+
+    <!--Another section-->
+
+    <section class="m-5" >
+      <div class="row m-5 ">
+       <div class="col-md-4">
+         <img src="./Capture.JPG" alt=""  height="400" width="300">
+
+       </div>
+       <div class="col-md-4">
+         <img src="./Capture2.JPG" alt="" height="400" width="300" >
+       </div>
+       <div class="col-md-4 mt-4">
+         <p class="handwriting textcolor">We Provide Highly <b > Reliable & <br> Effective </b> Legal Solutions</p>
+         <p class="text mt-3">Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Labore amet itaque sint <br>illo, laboriosam veniam numquam aliquam aut <br> blanditiis  omnis tenetur assumenda nostrum <br> nihil debitis aperiam vitae eveniet <br> nesciunt consectetur.</p>
+         <button type="button" class="btn btn-warning  color bg-warning-subtle rounded-0 border-0 mt-4 p-3">Book an Appointment </button>
+       </div>
+      </div>
+ </section>
+
+  <!--Section-->
+  <section class="background py-5">
+    <div class="container-fluid px-4">
+      <p class="text-center fs-3 fw-bold size">Happy Customers</p>
+      <div class="row g-4 py-5">  
+  
+        <div class="col-lg-4 p-4 col-md-6">
+          <div class="d-flex  bg-light p-4 rounded shadow-sm  height">
+            <div class="me-3">
+              <img src="./Capture3.JPG" alt="Lina Gold" class="rounded-circle customer-img">
+            </div>
+            <div>
+              <h5 class="mb-0">Lina Gold</h5>
+              <small class="text-muted">Owner, Ford</small>
+              <p class="mt-2 text-muted fs-5 textcolor">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4  p-4 col-md-6">
+          <div class="d-flex align-items-start bg-light height p-4 rounded shadow-sm">
+            <div class="me-3">
+              <img src="./Capture4.JPG" alt="Mike Fisher" class="rounded-circle customer-img">
+            </div>
+            <div>
+              <h5 class="mb-0">Mike Fisher</h5>
+              <small class="text-muted">Owner, Ford</small>
+              <p class="mt-2 text-muted  fs-5 textcolor">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-4 p-4 col-md-6">
+          <div class="d-flex align-items-start bg-light  height p-4 rounded shadow-sm">
+            <div class="me-3">
+              <img src="./Capture5.JPG" alt="Sheen Yu" class="rounded-circle customer-img">
+            </div>
+            <div>
+              <h5 class="mb-0">Sheen Yu</h5>
+              <small class="text-muted">Owner, Ford</small>
+              <p class="mt-2 text-muted  fs-5 textcolor">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam."
+              </p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!--Section-->
+<section>
+  <div class="row m-5 ">
+    <div class="col-md-4">
+      <img src="./Capture2.JPG" alt=""  height="500" width="350">
+
+    </div>
+    <div class="col-md-4">
+      <p class="handwriting textcolor">We Have <b>Legal <br> Solutions</b></p>
+      <p class="mt-3">Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. Quisquam reprehenderit <br> perspiciatis iste culpa consequuntur <br> consequatur eum, voluptatum, quod deserunt <br>maiores?</p>
+      <p class="mt-3">Modi perferendis ipsa ducimus consequuntur <br> excepturi autem, numquam facere aperiam iste <br> nam molestias provident consectetur molestiae <br> voluptatibus ipsum. Fugiat, quas.</p>
+      <p class="mt-3"> ✓  Aperiam iste nam molestias</p>
+      <p class="mt-3"> ✓  Modi perferendis ipsa</p>
+      <p class="mt-3"> ✓ Perspic iste culpa</p>
+    </div>
+    <div class="col-md-4 mt-4">
+      <div class="border border-secondary-subtle p-2  writing text-muted rounded-3">How to download and register?</div>
+      <div class="mt-3 border border-secondary-subtle p-2  writing text-muted rounded-3">How to create Paypal Account?</div>
+      <div class="mt-3 border border-secondary-subtle p-2  writing text-muted rounded-3" >How to link paypal and Bank account?</div>
+    </div>
+   </div>
+</section>  
+  
+<!--Footer-->
+<section id="foot" >
+  <footer class="footer">
+    <div class="container-fluid ">
+        <div class="row">
+            <!-- About Us Section -->
+            <div class="col-md-3 mt-5 ">
+                <h5 class="mt-4">About Us</h5>
+                <p class="mt-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="social-icons mt-4">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-2 mt-4">
+                <h5 class="mt-5">Quick Links</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="#" class="mt-5">About Us</a></li>
+                    <li><a href="#" class="mt-5">Testimonials</a></li>
+                    <li><a href="#" class="mt-5">Terms of Service</a></li>
+                    <li><a href="#" class="mt-5">Privacy</a></li>
+                    <li><a href="#" class="mt-5">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div class="col-md-2 mt-5">
+                <h5 class="mt-3">Resources</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Support -->
+            <div class="col-md-2 mt-5">
+                <h5 class="mt-3">Support</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="col-md-3 mt-5">
+                <h5 class="mt-3">Company</h5>
+                <ul class="list-unstyled mt-3">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class=" border-top mt-5 ">Copyrights Frontend developer 2029</footer>
+</footer>
+
+</section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

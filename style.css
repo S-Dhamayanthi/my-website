@@ -25,7 +25,7 @@
 
 
 #home{
-  background: url(./Capture.JPG) !important;
+  background: url(./pexels-olia-danilevich-5313169.jpg) !important;
   background-size: cover !important ;
   background-position: center !important;
   height: 100vh !important;
@@ -52,4 +52,89 @@
 .div1{
   height: 244px !important;
   width: 349px !important;
+}
+
+h1 {
+  font-family: "Playfair Display", serif !important;
+  font-weight: bold !important;
+}
+ .play{
+  font-family: "Playfair Display", serif !important;
+  font-size: 20px !important;
+ }
+ 
+ .law-card {
+  background-color: white !important;
+  padding: 20px !important;
+  text-align: center !important;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)  !important;
+  height: 190px !important;
+  width: 400 px !important;
+  margin-left: 75px !important;
+}
+.law-card img {
+  max-width: 60px !important;
+}
+.container {
+  margin-top: 50px;
+}
+
+.handwriting{
+  font-family: "Playfair Display", serif !important;
+  font-size: 29px !important;
+}
+.text{
+  font-size: 16px !important;
+}
+.color{
+  background-color: PeachPuff !important;
+}
+
+.textcolor{
+  color: #2C3E50 !important; 
+}
+
+.size{
+  font-family: "Playfair Display", serif !important;
+  font-size: 29px !important;
+  font-size: 29px !important;
+  color: #2C3E50 !important; 
+}
+
+.tag{
+  margin-right: 12px  !important;
+}
+
+.customer-img {
+  width: 50px !important; /* Adjust size */
+  height: 50px !important;
+  /* Ensures images don't stretch */
+}
+
+.height{
+  height: 300px !important;
+  width: 350px !important ;
+}
+ .writing{
+  font-family: "Playfair Display", serif !important;
+  font-size: 20px !important;
+ }
+
+ #foot{
+  background: url(./pexels-olia-danilevich-5313169.jpg) !important;
+  background-size: cover !important ;
+  background-position: center !important;
+  height: 100vh !important;
+ }
+
+ 
+ .background{
+  background-color: #F5F5F5 !important;
+ }
+ 
+ .footer{
+  background-color: rgba(0,0,0,.8) !important;
+  text-align: center !important;
+  color: white !important;
+  padding: 3px !important;
 }
